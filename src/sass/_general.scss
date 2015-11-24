@@ -1,0 +1,32 @@
+body, .content p {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+
+header {
+	height: 20vh;
+	position: fixed;
+	background: $light-grey;
+	width: 100%;
+}
+
+main {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	background: $off-white;
+}
+
+.content {
+	height: 70vh;
+	position: relative;
+}
+
+footer {
+	height: 10vh;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
