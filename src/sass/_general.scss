@@ -10,6 +10,7 @@ header {
 	position: fixed;
 	background: $light-grey;
 	width: 100%;
+	z-index: 2000;
 }
 
 main {
@@ -19,14 +20,14 @@ main {
 	background: $off-white;
 }
 
-.content {
-	height: 70vh;
-	position: relative;
-}
-
 footer {
 	height: 10vh;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
 }

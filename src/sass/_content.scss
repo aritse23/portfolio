@@ -1,8 +1,35 @@
-#home {
-	.first-word{
-		font-size: 48px;
+.content {
+	top:0;
+	height: 80vh;
+	position: relative;
+	h2 {
+		margin-left: 10%;
+		padding-top: 2em;
 	}
 	p {
 		font-size: 16px;
+		padding-top: 10vh;
+		margin-left: 10%;
+		width: 80%;	
 	}
+}
+
+#home {
+	background: #bbb;
+	.first-word{
+		font-size: 48px;
+	}	
+}
+
+#projects {
+	background: #fa7f00;
+}
+
+#about {
+	background: #d20000;
+}
+
+#contact {
+	height: 80vh;
+	background: #a2a2a2;
 }

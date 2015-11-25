@@ -10,6 +10,7 @@ header {
   position: fixed;
   background: #666666;
   width: 100%;
+  z-index: 2000;
 }
 
 main {
@@ -19,16 +20,21 @@ main {
   background: #F2F2F2;
 }
 
-.content {
-  height: 70vh;
-  position: relative;
-}
-
 footer {
   height: 10vh;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: fixed;
+  width: 80px;
 }
 
 .nav ul {
@@ -46,9 +52,57 @@ footer {
   border-right: 2px solid #000;
 }
 
+.content {
+  top: 0;
+  height: 80vh;
+  position: relative;
+}
+.content h2 {
+  margin-left: 10%;
+  padding-top: 2em;
+}
+.content p {
+  font-size: 16px;
+  padding-top: 10vh;
+  margin-left: 10%;
+  width: 80%;
+}
+
+#home {
+  background: #bbb;
+}
 #home .first-word {
   font-size: 48px;
 }
-#home p {
-  font-size: 16px;
+
+#projects {
+  background: #fa7f00;
+}
+
+#about {
+  background: #d20000;
+}
+
+#contact {
+  height: 80vh;
+  background: #a2a2a2;
+}
+
+footer {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+35,ffffff+45&amp;1+0,1+0,1+0,1+0,1+0,0+99,0+100,1+100,1+100,0.12+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.35) 35%, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0) 99%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.35) 35%, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0) 99%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.35) 35%, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0) 99%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1fffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+footer a {
+  margin-top: 1em;
+  margin-left: 50vw;
+  display: block;
+  width: 100px;
 }
