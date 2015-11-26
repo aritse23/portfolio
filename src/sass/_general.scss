@@ -6,16 +6,16 @@ body, .content p {
 }
 
 header {
-	height: 20vh;
+	height: 100px;
 	position: fixed;
-	background: $light-grey;
+	background: #FFF;
 	width: 100%;
 	z-index: 2000;
 }
 
 main {
 	position: absolute;
-	top: 20%;
+	top: 100px;
 	width: 100%;
 	background: $off-white;
 }

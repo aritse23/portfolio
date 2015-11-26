@@ -7,39 +7,66 @@
 		margin-left: 10%;
 		padding-top: 2em;
 	}
-	p {
-		font-size: 16px;
-		padding-top: 10vh;
+	h4 {
 		margin-left: 10%;
-		width: 80%;	
+	}
+	p {
+		display: block;
+		font-size: 16px;
+		margin-left: 10%;
+		width: 80%;		
 	}
 }
 
 #home {
-	background: #bbb;
+	background: url(../img/footer_lodyas.png);
 	.first-word{
 		font-size: 48px;
-	}	
+	}
+	p {		
+		color: #fff;
+		padding-bottom: 15px;
+		padding-top: 10px;
+		text-align: center;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+	}
 }
 
 #projects {
-	background: #fa7f00;
+	background: #F8F8F8;
 	.grid {
 		width: 80%;
 		margin: 0 auto;
 		img {
-			height: 200px;
-			width: 300px;
+			height: auto;
+			width: 100%;
 			margin-top: 1em;
 		}
 	}
 }
 
 #about {
-	background: #d20000;
+	background: #45494C;
+	h2,h4 {
+		color: rgba(255,255,255,0.7);
+	}
+	p {
+		color: #fff;
+		text-align: left;
+		margin-bottom: 2em;
+	}
+	ul {
+		color: #fff;
+	}
 }
 
 #contact {
-	height: 80vh;
-	background: #a2a2a2;
+	background: #D20000;
+	h2 {
+		color: rgba(255,255,255,0.7);
+	}
+	p {
+		color: #fff;
+	}
 }

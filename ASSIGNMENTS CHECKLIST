@@ -1,0 +1,32 @@
+ASSIGNMENTS CHECKLIST
+
+====CV====
+
+Redo entirely
+
+====INCEPTION====
+- add transition effect from landing page to content page
+- add audio controller on landing page
+- fix extra pages that display
+- add transition effect on characters page when clicking to view character info, also fix margins and line heights
+- Galleries fix pagination.
+- image optimization
+- Trailer should properly display end of website and hide the down button.
+
+====EARTH HOUR====
+- fill with proper content instead of lorem
+- Optimize earth image
+- Change fonts
+- Bring in SEO
+
+====TSEARIMASU====
+- Try create a new CMS theme from scratch.
+
+====DEADSTOCK.====
+- make more child theme changes
+- 
+
+====AIR JORDAN====
+- footer at large media query remove the background
+- add click me command?
+- change images to allow more dynamic text layout

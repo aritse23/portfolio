@@ -1,6 +1,14 @@
-.logo {
+.logo img {
 	position: fixed;
 	width: 80px;
+	left: 10px;
+	top: 10px;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+  	transition: transform .8s ease-in-out;
+}
+.logo img:hover {
+	-webkit-transform: rotate(90deg);
+  	transform: rotate(90deg);
 }
 
 .nav {
@@ -19,3 +27,4 @@
 		}
 	}
 }
+
