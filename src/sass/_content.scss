@@ -1,7 +1,8 @@
 .content {
 	top:0;
-	height: 80vh;
+	min-height: 80vh;
 	position: relative;
+	padding-bottom: 1em;
 	h2 {
 		margin-left: 10%;
 		padding-top: 2em;
@@ -23,6 +24,15 @@
 
 #projects {
 	background: #fa7f00;
+	.grid {
+		width: 80%;
+		margin: 0 auto;
+		img {
+			height: 200px;
+			width: 300px;
+			margin-top: 1em;
+		}
+	}
 }
 
 #about {
