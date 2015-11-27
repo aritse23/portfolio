@@ -9,44 +9,52 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/stylesheet.css">
+	<!-- JQUERY CDN -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<div class="logo">				
 				<a href="#"><img src="assets/img/logo-final.svg" alt="logo"></a>
-			</div>
+			</div><!-- logo -->
 			<div class="nav">
-				<!-- <ul>
-					<li class="proj_butt">Projects</li>
-					<li class="about_butt">About</li>
-					<li class="contact_butt">Contact</li>
-				</ul> -->
+				<ul>
+					<li class="proj_butt"><a href="#projects">Projects</a></li>
+					<li class="about_butt"><a href="#about">About</a></li>
+					<li class="contact_butt"><a href="#contact">Contact</a></li>
+				</ul>
 			</div><!-- nav -->
 		</header>
 		<main>
 			<div id="home" class="content">
-				<div class="stuff">
+				<br>
+				<br>
 				<br>
 				<br>
 				<p><span class="first-word">Hello.</span>
 				<br>
-				Welcome to my website, I am a junior Front-End Web Designer. You can scroll down and view some of the projects I have worked on recently. Enjoy!
+				<br>
+				<a href="#about">I AM A FRONT END WEB DESIGNER.</a>
+				<br>
+				<a href="#projects">CHECK OUT MY WORK.</a>
+				<br>
+				<a class="cta" href="#contact">GET IN TOUCH.</a>
 				<br>
 				<br>
-				Ari Tse</p>
-			</div>
+				- Ari Tse -</p>
 			</div><!-- #home -->
 			<div id="projects" class="content">
 				<h2>PROJECTS</h2>
 				<div class="grid">
 					<!-- <img src="assets/img/portfolio.svg" alt=""> -->
-					<a href="" target"_blank"><img src="assets/img/earth.png" alt=""></a>
-					<a href="" target="_blank"><img src="assets/img/inception.png" alt=""></a>
-					<a href="" target="_blank"><img src="assets/img/coca_cola.png" alt=""></a>
-					<a href="" target="_blank"><img src="assets/img/jordan.png" alt=""></a>
+					<a href="" class="proj-img landing"><img src="assets/img/earth.png" alt=""></a>
+					<a href="" class="proj-img movie"><img src="assets/img/inception.png" alt=""></a>
+					<a href="" class="proj-img festival"><img src="assets/img/coca_cola.png" alt=""></a>
+					<a href="" class="proj-img brand"><img src="assets/img/jordan.png" alt=""></a>
 				</div><!-- grid -->
-			</div><!-- #projects -->
+			</div><!-- #projects -->			
+			
 			<div id="about" class="content">
 				<h2>ABOUT ME</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, maiores impedit. Quas veniam fuga, recusandae odio quae quam ducimus expedita cum repellat, perspiciatis tempora. Voluptas non molestiae dolore. Itaque, est.</p>
@@ -72,9 +80,68 @@
 				</ul>
 			</div><!-- #about -->
 			<div id="contact" class="content">
-				<h2>CONTACT</h2>			
+				<h2>CONTACT</h2>
+				<ul>
+					<li>Ari Tse</li>
+					<li>0211712135</li>
+					<li>aritse23@gmail.com</li>
+				</ul>
+
+				<!-- contact form -->
+				<form action="index.html" method="post">
+
+				</form>
 			</div><!-- #contact -->
 		</main>
+		<!-- ==========MODAL SECTION========= -->
+			<div id="earth_hour" class="modal">
+				<a href=""><img class="exit" src="assets/img/exit.svg" alt=""></a>
+				<img src="assets/img/earth.png" alt="">
+				<h3>The Brief</h3>
+				<p>Create a landing page for an organization</p>
+				<h4>Focus</h4>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="inception" class="modal">
+				<a href=""><img class="exit" src="assets/img/exit.svg" alt=""></a>
+				<img src="assets/img/inception.png" alt="">
+				<h3>The Brief</h3>
+				<p>Create a website to promote a upcoming or previously released movie</p>
+				<h4>Focus</h4>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="coca-cola" class="modal">
+				<a href=""><img class="exit" src="assets/img/exit.svg" alt=""></a>
+				<img src="assets/img/coca_cola.png" alt="">
+				<h3>The Brief</h3>
+				<p>Create a online poster for a festival sponsored by coca-cola</p>
+				<h4>Focus</h4>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div id="air_jordan" class="modal">
+				<a href=""><img class="exit" src="assets/img/exit.svg" alt=""></a>
+				<img src="assets/img/jordan.png" alt="">
+				<h3>The Brief</h3>
+				<p>Create a website to portray the brand guidelines for a brand of your choosing</p>
+				<h4>Focus</h4>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		<footer>
 			<a href="#projects">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 9" enable-background="new 0 0 36 9" xml:space="preserve">
@@ -85,5 +152,6 @@
 			</a>
 		</footer><!-- footer -->
 	</div><!-- wrapper -->
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
