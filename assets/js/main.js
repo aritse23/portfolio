@@ -32,6 +32,12 @@ $(document).ready(function(){
 		}
 
 	});
-	// When clicking on nav item
-	
+	// When clicking on nav item smoothly scrolls to section
+	$(".nav_butt").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({
+			scrollTop:$(this.hash).offset().top - 99}, 
+			800
+		);
+	});
 });
