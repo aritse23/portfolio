@@ -28,7 +28,11 @@
 		text-decoration: none;
 		color: #fff
 	}
-
+	hr {
+		width: 300px;
+		height: 0.5px;
+		background-color: #fff;
+	}
 	.cta {
 		background-color: #D23634;
 		padding: 0.5em 1em;
@@ -38,14 +42,13 @@
 		line-height: 2em;
 		padding-bottom: 30px;
 		padding-top: 30px;
-		text-align: center;
-		border-top: 5px solid #fff;
-		border-bottom: 5px solid #fff;
+		text-align: center;		
 	}
 }
 
 #projects {
 	background: #DEDEDE;
+	padding-bottom: 4em;
 	h2,h4 {
 		color: rgba(0,0,0,0.7);
 	}
@@ -62,6 +65,7 @@
 
 #about {
 	background: #45494C;
+	padding-bottom: 4em;
 	h2,h4 {
 		color: rgba(255,255,255,0.7);
 	}
@@ -102,15 +106,14 @@
 	background: rgba(255,255,255,0.95);
 	z-index:6000;
 	.exit {
+		position: fixed;
 		margin-top: 10px;
 		margin-bottom: 20px;
-		margin-right: 10%;
-		float: right;
+		right: 10px;
 		width: 30px;
 	}
 	img {
-		margin-left: 10%;
-		width: 80%;
+		width: 100%;
 	}
 	h2, h3 {
 		margin-left: 10%;
