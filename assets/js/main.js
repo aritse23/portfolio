@@ -32,6 +32,13 @@ $(document).ready(function(){
 		}
 
 	});
+
+	// When clicking on next button, takes user to next section
+	$('.next').click(function(event){
+		event.preventDefault();
+		
+	})
+
 	// When clicking on nav item smoothly scrolls to section
 	$(".nav_butt").click(function(event){		
 		event.preventDefault();
