@@ -5,29 +5,29 @@ $(document).ready(function(){
 		event.preventDefault();
 		// if image you clicked has the class landing, then show earth hour modal
 		if ($(this).hasClass('landing')){
-			$('#earth_hour').show('slow');
+			$('#earth_hour').slideDown('slow');
 			// click exit button to close modal
 			$('.exit').click(function(event){
 				event.preventDefault();
-				$('#earth_hour').hide('slow');
+				$('#earth_hour').slideUp('slow');
 			});
 		} else if ($(this).hasClass('movie')){
-			$('#inception').show('slow');
+			$('#inception').slideDown('slow');
 			$('.exit').click(function(event){
 				event.preventDefault();
-				$('#inception').hide('slow');
+				$('#inception').slideUp('slow');
 			});
 		} else if ($(this).hasClass('festival')){
-			$('#coca-cola').show('slow');
+			$('#coca-cola').slideDown('slow');
 			$('.exit').click(function(event){
 				event.preventDefault();
-				$('#coca-cola').hide('slow');
+				$('#coca-cola').slideUp('slow');
 			});
 		} else if ($(this).hasClass('brand')){
-			$('#air_jordan').show('slow');
+			$('#air_jordan').slideDown('slow');
 			$('.exit').click(function(event){
 				event.preventDefault();
-				$('#air_jordan').hide('slow');
+				$('#air_jordan').slideUp('slow');
 			});
 		}
 
