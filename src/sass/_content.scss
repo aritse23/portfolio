@@ -39,13 +39,16 @@
 		padding-bottom: 30px;
 		padding-top: 30px;
 		text-align: center;
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
+		border-top: 5px solid #fff;
+		border-bottom: 5px solid #fff;
 	}
 }
 
 #projects {
 	background: #DEDEDE;
+	h2,h4 {
+		color: rgba(0,0,0,0.7);
+	}
 	.grid {
 		width: 80%;
 		margin: 0 auto;

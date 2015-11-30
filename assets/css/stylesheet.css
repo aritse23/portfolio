@@ -2,7 +2,7 @@ body, .content p {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -106,12 +106,15 @@ h1, h2, h3, h4 {
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
 }
 
 #projects {
   background: #DEDEDE;
+}
+#projects h2, #projects h4 {
+  color: rgba(0, 0, 0, 0.7);
 }
 #projects .grid {
   width: 80%;
