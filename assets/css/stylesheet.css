@@ -64,15 +64,16 @@ h1, h2, h3, h4 {
 .nav ul li {
   text-decoration: none;
   list-style: none;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.25em 1em 0.25em 1em;
 }
 .nav ul li a {
   text-decoration: none;
   color: #000;
+  font-weight: 700;
 }
 .nav ul .about_butt {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid #999;
+  border-right: 2px solid #999;
 }
 
 .content {
@@ -134,97 +135,17 @@ h1, h2, h3, h4 {
 #projects .grid {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
-#projects .grid .set {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#projects .grid a {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 0.5em;
 }
-#projects .grid .set a {
-  width: 300px;
-  margin-top: 2em;
-}
-#projects .grid .set img {
+#projects .grid img {
   height: auto;
-  width: 300px;
-}
-#projects .grid .set .bar1 {
-  width: 0;
-  height: 35px;
-  background-color: #D20000;
-}
-#projects .bars {
-  display: block;
-  margin-left: 5em;
-}
-#projects .skillbar {
-  position: relative;
-  display: block;
-  margin-bottom: 15px;
-  width: 100%;
-  height: 35px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -ms-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color;
-}
-#projects .skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110px;
-  font-weight: bold;
-  font-size: 13px;
-  color: #ffffff;
-  background: #6adcfa;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-#projects .skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-#projects .skillbar-bar {
-  height: 35px;
-  width: 0px;
-  background: #6adcfa;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-#projects .skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 35px;
-  line-height: 35px;
-  color: #ffffff;
-  color: rgba(0, 0, 0, 0.4);
+  width: 250px;
+  margin-bottom: 0.5em;
 }
 
 #about {
@@ -267,6 +188,7 @@ h1, h2, h3, h4 {
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
   z-index: 6000;
+  display: none;
 }
 .modal .exit {
   position: fixed;
@@ -278,9 +200,18 @@ h1, h2, h3, h4 {
 .modal img {
   width: 100%;
 }
-.modal h2, .modal h3 {
+.modal .mod_content {
+  height: 50vh;
+  overflow: auto;
+}
+.modal h2 {
   margin-left: 10%;
   padding-top: 2em;
+}
+.modal h3 {
+  margin-left: 10%;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 .modal h4, .modal li {
   margin-left: 10%;
@@ -291,9 +222,77 @@ h1, h2, h3, h4 {
   margin-left: 10%;
   width: 80%;
 }
-
-#earth_hour, #inception, #coca-cola, #air_jordan {
-  display: none;
+.modal .skillbars {
+  display: flex;
+  flex-direction: row;
+}
+.modal .skillbars .skill_name {
+  display: block;
+  border-radius: 2px 0 0 2px;
+  width: 120px;
+  margin-left: 10%;
+  margin-bottom: 2em;
+  background: #3F403E;
+  padding: 10px 5px 0 0;
+  height: 25px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #DEDEDE;
+  text-align: right;
+}
+.modal .skillbars .bars {
+  display: block;
+  width: 0;
+  height: 35px;
+  border-radius: 0 2px 2px 0;
+}
+.modal .skillbars .bar1 {
+  background-color: #80D018;
+}
+.modal .skillbars .bar2 {
+  background-color: #ED8308;
+}
+.modal .skillbars .bar3 {
+  background-color: #01AAD1;
+}
+.modal .skillbars .bar4 {
+  background-color: #3F8ABC;
+}
+.modal .skillbars .bar5 {
+  background-color: #585E5A;
+}
+.modal .skillbars .bar6 {
+  background-color: #325059;
+}
+.modal .skillbars .bar7 {
+  background-color: #84827D;
+}
+.modal .skillbars .bar8 {
+  background-color: #D00010;
+}
+.modal .skillbars .bar9 {
+  background-color: #8B5538;
+}
+.modal .skillbars .bar10 {
+  background-color: #707070;
+}
+.modal .skillbars .bar11 {
+  background-color: #DC1717;
+}
+.modal .skillbars .bar12 {
+  background-color: #B6C2BC;
+}
+.modal .skillbars .bar13 {
+  background-color: #D20000;
+}
+.modal .skillbars .bar14 {
+  background-color: #242424;
+}
+.modal .skillbars .bar15 {
+  background-color: #A9A9A9;
+}
+.modal .skillbars .bar16 {
+  background-color: #757575;
 }
 
 footer {
@@ -305,4 +304,11 @@ footer a {
   margin-left: 10vw;
   display: block;
   width: 100px;
+}
+
+@media screen and (min-width: 724px) {
+  #projects .grid a {
+    display: inline;
+    margin: 0.5em;
+  }
 }
