@@ -5,6 +5,9 @@ Montserrat
 Raleway 
 Ubuntu
 lato **check
+add textures to background of each section
+
+
 
 increase padding bottom on projects and about page. **check
 
@@ -13,15 +16,21 @@ smooth scroll effects **check
 down button make it more obvious **check
 add scroll back to top button
 write jquery for down button
+hover effects on nav buttons
+slim height of nav when you scroll
+image created using sublime text editor
+
 
 ====HOMEPAGE====
 
 top and bottom border thickness (maybe create custom), or not have borders at all
 create custom background
+create a pixel me
 
 ====PROJECTS====
 
 Change screenshots to circular shape **check
+
 
 ====ABOUT====
 
@@ -34,6 +43,8 @@ Create email form
 
 ====MODALS====
 
+create modals when clicking on screenshots **check
+Skills bar graph **check
 hide content using javascript.
 add modal css with javascript for "BACKWARD COMPATIBILITY"
 
