@@ -19,6 +19,7 @@ $(document).ready(function(){
 			$('.bar4').animate({
 				width: 100
 			},2000);
+			$("body").css({ overflow: 'hidden' });
 			// click exit button to close modal			
 			$('.exit').click(function(event){
 				event.preventDefault();
@@ -26,6 +27,7 @@ $(document).ready(function(){
 				$('.bar1, .bar2, .bar3, .bar4').animate({
 					width: 0
 				},200);
+				$("body").css({ overflow: 'inherit' });
 
 			});
 
@@ -43,12 +45,14 @@ $(document).ready(function(){
 			$('.bar8').animate({
 				width: 180
 			},2000);
+			$("body").css({ overflow: 'hidden' });
 			$('.exit').click(function(event){
 				event.preventDefault();
 				$('#inception').slideUp('slow');
 				$('.bar5, .bar6, .bar7, .bar8').animate({
 					width: 0
 				},200);
+				$("body").css({ overflow: 'inherit' });
 			});
 		} else if ($(this).hasClass('festival')){
 			$('#coca-cola').slideDown('slow');
@@ -64,12 +68,17 @@ $(document).ready(function(){
 			$('.bar12').animate({
 				width: 150
 			},2000);
+			$('body').scroll(function(event){
+				event.preventDefault();
+			})
+			$("body").css({ overflow: 'hidden' });
 			$('.exit').click(function(event){
 				event.preventDefault();
 				$('#coca-cola').slideUp('slow');
 				$('.bar9, .bar10, .bar11, .bar12').animate({
 					width: 0
 				},200);
+				$("body").css({ overflow: 'inherit' });
 			});
 		} else if ($(this).hasClass('brand')){
 			$('#air_jordan').slideDown('slow');
@@ -85,12 +94,14 @@ $(document).ready(function(){
 			$('.bar16').animate({
 				width: 155
 			},2000);
+			$("body").css({ overflow: 'hidden' });
 			$('.exit').click(function(event){
 				event.preventDefault();
 				$('#air_jordan').slideUp('slow');
 				$('.bar13, .bar14, .bar15, .bar16').animate({
 					width: 0
 				},200);
+				$("body").css({ overflow: 'inherit' });
 			});
 		}
 
