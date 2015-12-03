@@ -167,24 +167,54 @@ h1, h2, h3, h4 {
   font-weight: 300;
   text-align: left;
   margin-bottom: 2em;
+  line-height: 1.5em;
+}
+#about .strike {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.4);
 }
 #about ul {
   color: #fff;
   font-weight: 300;
 }
-
-#contact {
+#about .cv-link {
+  margin-left: 10%;
+  text-decoration: none;
+  color: #DEDEDE;
+  padding: 4px;
+  border-radius: 4px;
   background: #D23634;
 }
-#contact h2 {
+
+#contact {
+  min-height: 30vh;
+  background: #D23634;
+}
+#contact .details {
+  height: 50vh;
+  position: relative;
+}
+#contact .details h2 {
   color: rgba(255, 255, 255, 0.7);
 }
-#contact p {
+#contact .details p {
   color: #fff;
   font-weight: 300;
 }
-#contact ul {
+#contact .details ul {
   font-weight: 300;
+  list-style: none;
+  font-size: 20px;
+  color: #DEDEDE;
+  margin: 0;
+  padding: 0;
+}
+#contact .social {
+  position: relative;
+  bottom: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.7);
+  line-height: 10px;
 }
 
 .modal {
@@ -227,7 +257,16 @@ h1, h2, h3, h4 {
   width: 90%;
   color: #DEDEDE;
   font-weight: 300;
+  line-height: 1.5em;
   margin-right: 10%;
+  margin-bottom: 25px;
+}
+.modal .site-link {
+  text-decoration: none;
+  color: #DEDEDE;
+  padding: 4px;
+  border-radius: 4px;
+  background: #D23634;
 }
 .modal .skillbars {
   display: flex;
@@ -323,6 +362,25 @@ footer a {
   width: 100px;
 }
 
+@media screen and (max-width: 360px) {
+  header .nav ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 7px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  header .nav ul li {
+    padding: 3px;
+  }
+  header .nav ul .about_butt {
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    border-left: 0;
+    border-right: 0;
+  }
+}
 @media screen and (min-width: 724px) {
   .content h2,
   .content h4,
@@ -341,6 +399,13 @@ footer a {
     position: absolute;
     font-size: 20px;
     top: 25vh;
+  }
+
+  #about .cv-link {
+    margin-left: 15%;
+  }
+  #about p {
+    font-size: 20px;
   }
 
   #projects .grid {
@@ -373,6 +438,10 @@ footer a {
   }
 }
 @media screen and (min-width: 860px) {
+  #about p {
+    width: 600px;
+  }
+
   .modal img {
     width: 400px;
   }
