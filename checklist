@@ -45,6 +45,8 @@ Create email form
 
 create modals when clicking on screenshots **check
 Skills bar graph **check
+skill bar color scheme may confuse users
+STop scrolling on outer window when scrolling inner div
 hide content using javascript.
 add modal css with javascript for "BACKWARD COMPATIBILITY"
 
