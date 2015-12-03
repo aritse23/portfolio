@@ -11,10 +11,10 @@ $(document).ready(function(){
 				width: 160
 			},2000);
 			$('.bar2').animate({
-				width: 180
+				width: 140
 			},2000);
 			$('.bar3').animate({
-				width: 140
+				width: 180
 			},2000);
 			$('.bar4').animate({
 				width: 100
@@ -86,7 +86,7 @@ $(document).ready(function(){
 				width: 180
 			},2000);
 			$('.bar14').animate({
-				width: 160
+				width: 170
 			},2000);
 			$('.bar15').animate({
 				width: 140

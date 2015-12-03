@@ -85,25 +85,55 @@
 		font-weight: 300;
 		text-align: left;
 		margin-bottom: 2em;
+		line-height: 1.5em;
 	}
-
+	.strike {
+		text-decoration: line-through;
+		color: rgba(255,255,255,0.4);
+	}
 	ul {
 		color: #fff;		
 		font-weight: 300;
 	}
+	.cv-link{
+
+		margin-left: 10%;
+		text-decoration: none;
+		color: #DEDEDE;
+		padding: 4px;
+		border-radius: 4px;
+		background: #D23634;
+	}
 }
 
 #contact {
+	min-height: 30vh;
 	background: #D23634;
-	h2 {
-		color: rgba(255,255,255,0.7);
+	.details {
+		height: 50vh;		
+		position: relative;
+		h2 {
+			color: rgba(255,255,255,0.7);
+		}
+		p {
+			color: #fff;		
+			font-weight: 300;
+		}
+		ul{
+			font-weight: 300;
+			list-style: none;
+			font-size: 20px;
+			color: #DEDEDE;
+			margin: 0;
+			padding: 0;
+		}
 	}
-	p {
-		color: #fff;		
-		font-weight: 300;
-	}
-	ul{
-		font-weight: 300;
+	.social {
+		position: relative;
+		bottom: 0;
+		height: 60px;		
+		background: rgba(255,255,255,0.7);
+		line-height: 10px;
 	}
 }
 
@@ -148,9 +178,18 @@
 		width: 90%;
 		color: #DEDEDE;
 		font-weight: 300;
-
+		line-height: 1.5em;
 		margin-right: 10%;
+		margin-bottom: 25px;
 	}
+	.site-link {
+		text-decoration: none;
+		color: #DEDEDE;
+		padding: 4px;
+		border-radius: 4px;
+		background: #D23634;
+	}
+
 	.skillbars  {
 		display: flex;
 		flex-direction: row;

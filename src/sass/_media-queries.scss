@@ -1,3 +1,28 @@
+@media screen and (max-width: 360px){
+	header {
+		.nav {
+			ul {
+				display: flex;
+				flex-direction:column;
+				float: right;
+				margin-right: 7px;
+				margin-top: 7px;
+				text-align: center;
+				li {
+						padding: 3px;
+					a{
+					}
+				}
+				.about_butt {
+					border-top: 2px solid #999;
+					border-bottom: 2px solid #999;
+					border-left: 0;
+					border-right: 0;
+				}
+			}
+		}
+	}
+}
 @media screen and (min-width: 724px){
 	.content {
 		h2, 
@@ -21,7 +46,12 @@
 		}
 	}
 	#about {
-
+		.cv-link{
+			margin-left: 15%;
+		}
+		p {
+			font-size: 20px;
+		}
 	}
 	#projects {
 		.grid{
@@ -63,6 +93,11 @@
 }
 
 @media screen and (min-width: 860px) {
+	#about {
+		p {
+			width: 600px;
+		}
+	}
 	.modal {
 		img {
 			width: 400px;
