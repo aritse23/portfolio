@@ -65,14 +65,16 @@ h1, h2, h3, h4 {
   text-decoration: none;
   list-style: none;
 }
+.nav ul li :hover {
+  background-color: #D23634;
+  border-radius: 3px;
+  transition: all 1s ease-in-out;
+}
 .nav ul li a {
   text-decoration: none;
   color: #000;
   font-weight: 700;
   padding: 0.25em 1em 0.25em 1em;
-}
-.nav ul li a :hover {
-  background-color: #D23634;
 }
 .nav ul .about_butt {
   border-left: 2px solid #999;
@@ -111,6 +113,9 @@ h1, h2, h3, h4 {
   text-decoration: none;
   color: #fff;
 }
+#home a :hover {
+  text-decoration: underline;
+}
 #home hr {
   width: 300px;
   height: 1px;
@@ -147,25 +152,30 @@ h1, h2, h3, h4 {
   display: block;
   margin: 0 auto;
   width: 250px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+#projects .grid a :hover {
+  background-color: #D23634;
 }
 #projects .grid img {
   height: auto;
   width: 250px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 #about {
   background: #45494C;
+  padding-top: 4em;
   padding-bottom: 4em;
 }
-#about h2, #about h4 {
+#about h2, #about h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 #about p {
   color: #fff;
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
+  letter-spacing: 1px;
   margin-bottom: 2em;
   line-height: 1.5em;
 }
@@ -176,6 +186,7 @@ h1, h2, h3, h4 {
 #about ul {
   color: #fff;
   font-weight: 300;
+  padding-bottom: 15px;
 }
 #about .cv-link {
   margin-left: 10%;
@@ -184,6 +195,28 @@ h1, h2, h3, h4 {
   padding: 4px;
   border-radius: 4px;
   background: #D23634;
+}
+#about .skill-list {
+  margin-left: 10%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 80%;
+}
+#about .skill-list li {
+  margin-left: 0;
+}
+#about .skill-list li .skill-icon {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  width: 150px;
+  margin: 5px;
+}
+#about .skill-list li .skill-icon :hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 #contact {
@@ -211,10 +244,15 @@ h1, h2, h3, h4 {
 }
 #contact .social {
   position: relative;
-  bottom: 0;
   height: 60px;
   background: rgba(255, 255, 255, 0.7);
-  line-height: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+}
+#contact .social .social-links img {
+  width: 45px;
+  margin: 7px 10px 7px 0;
 }
 
 .modal {
@@ -362,7 +400,7 @@ footer a {
   width: 100px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 345px) {
   header .nav ul {
     display: flex;
     flex-direction: column;
@@ -381,10 +419,15 @@ footer a {
     border-right: 0;
   }
 }
+@media screen and (min-width: 615px) {
+  #about p {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 724px) {
   .content h2,
+  .content h3,
   .content h4,
-  .content li,
   .content p {
     margin-left: 15%;
     width: 70%;
@@ -405,7 +448,13 @@ footer a {
     margin-left: 15%;
   }
   #about p {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  #about .skill-list {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #projects .grid {
@@ -414,6 +463,13 @@ footer a {
   #projects .grid a {
     display: inline;
     margin: 0.5em;
+  }
+
+  #contact li {
+    margin-left: 15%;
+  }
+  #contact .social {
+    padding-left: 15%;
   }
 
   .modal img {
@@ -438,8 +494,8 @@ footer a {
   }
 }
 @media screen and (min-width: 860px) {
-  #about p {
-    width: 600px;
+  #about .skill-list {
+    width: 680px;
   }
 
   .modal img {

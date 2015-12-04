@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px){
+@media screen and (max-width: 345px){
 	header {
 		.nav {
 			ul {
@@ -23,11 +23,19 @@
 		}
 	}
 }
+
+@media screen and (min-width: 615px){
+	#about {
+		p {
+			width: 480px;
+		}
+	}
+}
 @media screen and (min-width: 724px){
 	.content {
 		h2, 
-		h4, 
-		li,	
+		h3,
+		h4,
 		p {
 			margin-left: 15%;
 			width: 70%;
@@ -50,7 +58,13 @@
 			margin-left: 15%;
 		}
 		p {
-			font-size: 20px;
+			font-size: 18px;
+		}
+		.skill-list {
+			margin-left: 15%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
 	}
 	#projects {
@@ -61,6 +75,15 @@
 				margin: 0.5em;
 			}
 
+		}
+	}
+
+	#contact {
+		li {
+			margin-left: 15%;
+		}
+		.social{
+			padding-left: 15%;
 		}
 	}
 	.modal {			
@@ -94,8 +117,8 @@
 
 @media screen and (min-width: 860px) {
 	#about {
-		p {
-			width: 600px;
+		.skill-list {
+			width: 680px;
 		}
 	}
 	.modal {
