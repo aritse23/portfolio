@@ -12,6 +12,7 @@ add textures to background of each section
 increase padding bottom on projects and about page. **check
 
 ====NAV====
+
 smooth scroll effects **check
 down button make it more obvious **check
 add scroll back to top button
@@ -19,7 +20,6 @@ write jquery for down button
 hover effects on nav buttons
 slim height of nav when you scroll
 image created using sublime text editor
-
 
 ====HOMEPAGE====
 
@@ -50,3 +50,23 @@ STop scrolling on outer window when scrolling inner div
 hide content using javascript.
 add modal css with javascript for "BACKWARD COMPATIBILITY"
 
+====DICKONS LAST WORDS====
+- MOBILE FIRST
+- ASSETS, your deadline depends on your client's assets. they have a deadline for you, you need to let them know that you require the assets before a certain time or else I won't be able to promise to get the job done by their deadline.
+- if u dont take the timeslot that i provide you, then I will prioritize other work.
+- TEST YOUR WEBSITES, SPEED, UX, SEO
+- 
+PEOPLE TO FOLLOW:
+- David Desandro
+- Paul Irish
+- John Resig
+- Jon Raasch
+- Chris Coyier
+- Matt Cutts
+- Jqueryui, github, csstricks, druppple, alistapart
+
+Good Reference:
+- sitepoint
+- stackoverflow
+- codepen
+- 

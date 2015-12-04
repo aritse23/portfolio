@@ -102,6 +102,9 @@ h1, h2, h3, h4 {
   width: 80%;
   font-weight: 300;
 }
+.content h2, .content h3, .content h4 {
+  letter-spacing: 2px;
+}
 
 #home {
   background: url(../img/footer_lodyas.png);
@@ -171,10 +174,13 @@ h1, h2, h3, h4 {
 #about h2, #about h3 {
   color: rgba(255, 255, 255, 0.7);
 }
+#about h3 {
+  margin-left: 10%;
+}
 #about p {
   color: #fff;
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 1px;
   margin-bottom: 2em;
   line-height: 1.5em;
@@ -211,7 +217,7 @@ h1, h2, h3, h4 {
 #about .skill-list li .skill-icon {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  width: 150px;
+  width: 140px;
   margin: 5px;
 }
 #about .skill-list li .skill-icon :hover {
@@ -281,13 +287,11 @@ h1, h2, h3, h4 {
   overflow: auto;
   margin-left: 10%;
 }
-.modal h2 {
-  padding-top: 2em;
-}
 .modal h3 {
   padding-top: 1em;
   padding-bottom: 1.5em;
   color: #DEDEDE;
+  letter-spacing: 2px;
 }
 .modal p {
   display: block;
@@ -444,6 +448,9 @@ footer a {
     top: 25vh;
   }
 
+  #about h3 {
+    margin-left: 15%;
+  }
   #about .cv-link {
     margin-left: 15%;
   }
