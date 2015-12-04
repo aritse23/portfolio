@@ -28,6 +28,9 @@
 	a {
 		text-decoration: none;
 		color: #fff;
+		:hover{
+			text-decoration: underline;
+		}
 	}
 	hr {
 		width: 300px;
@@ -64,26 +67,31 @@
 			display: block;
 			margin: 0 auto;
 			width: 250px;
-			margin-bottom: 0.5em;
+			margin-bottom: 1em;
+			:hover {
+				background-color: #D23634;
+			}
 		}
 		img {
 			height: auto;
 			width: 250px;
-			margin-bottom: 0.5em;
+			margin-bottom: 1em;
 		}		
 	}	
 }
 
 #about {
 	background: #45494C;
+	padding-top: 4em;
 	padding-bottom: 4em;
-	h2,h4 {
+	h2,h3 {
 		color: rgba(255,255,255,0.7);
 	}
 	p {
 		color: #fff;
 		font-weight: 300;
-		text-align: left;
+		text-align: justify;
+		letter-spacing: 1px;
 		margin-bottom: 2em;
 		line-height: 1.5em;
 	}
@@ -94,6 +102,7 @@
 	ul {
 		color: #fff;		
 		font-weight: 300;
+		padding-bottom: 15px;
 	}
 	.cv-link{
 
@@ -103,6 +112,28 @@
 		padding: 4px;
 		border-radius: 4px;
 		background: #D23634;
+	}
+	.skill-list {
+		margin-left: 10%;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style: none;
+		width: 80%;
+		li{
+			margin-left: 0;
+			.skill-icon {
+				-webkit-filter: grayscale(1);
+  				filter: grayscale(1);
+				width: 150px;
+				margin: 5px;
+				:hover{
+					-webkit-filter: grayscale(0);
+  					filter: grayscale(0);
+				}
+			}
+		}
 	}
 }
 
@@ -130,10 +161,17 @@
 	}
 	.social {
 		position: relative;
-		bottom: 0;
 		height: 60px;		
 		background: rgba(255,255,255,0.7);
-		line-height: 10px;
+		display: flex;
+		flex-direction: row;
+		padding-left: 10%;
+		.social-links{			
+			img{
+				width: 45px;
+				margin: 7px 10px 7px 0;
+			}
+		}
 	}
 }
 
